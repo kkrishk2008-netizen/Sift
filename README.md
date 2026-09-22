@@ -5,7 +5,7 @@
 Sift is a mobile app for Indian students and first-job professionals whose deadlines arrive as posters, WhatsApp messages, screenshots and voice notes — in a mix of English, Hinglish and regional languages. Instead of retyping all of that into a to-do app, you snap a poster, speak a messy voice note, or paste a chaotic group message, and Sift turns it into a structured, prioritized action.
 
 ```
-Poster / Voice note / WhatsApp message  →  AI extraction  →  Prioritized inbox  →  Calendar
+Scan a Task / Voice note / WhatsApp message  →  AI extraction  →  Prioritized inbox  →  Calendar
 ```
 
 Built with **React Native (Expo) + TypeScript** and **Supabase** (Postgres with row-level security), with a multimodal LLM behind the scenes. **Works with zero setup in Demo Mode** — no API keys needed to try it. Add Supabase + AI keys to switch on the live AI pipeline.
