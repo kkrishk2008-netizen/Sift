@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Sift",
+    "slug": "sift",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "sift",
+    "userInterfaceStyle": "light",
+    "icon": "./src/assets/icon.png",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5B3DF5"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sift.app"
+    },
+    "android": {
+      "package": "com.sift.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#5B3DF5"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CALENDAR",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Sift uses the camera to scan posters and notices.",
+          "photosPermission": "Sift reads screenshots and posters you choose."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Sift listens to your voice dump so it can turn it into tasks."
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Sift adds the events it finds to your calendar.",
+          "remindersPermission": "Sift can add reminders for your tasks."
+        }
+      ],
+      "expo-status-bar"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7f5c00cd-8cd1-4282-a363-c4d0327e0b3b"
+      }
+    },
+    "owner": "krishna_0104"
+  }
+}

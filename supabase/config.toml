@@ -1,0 +1,8 @@
+# Minimal Supabase CLI config. `supabase init` will generate a fuller one; this is enough to deploy functions.
+project_id = "sift"
+
+[functions.extract]
+verify_jwt = true   # the app's anon key (or a signed-in user's token) is a valid JWT, so this stays ON
+
+[functions.transcribe]
+verify_jwt = true
